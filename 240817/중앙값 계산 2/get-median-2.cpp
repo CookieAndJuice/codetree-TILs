@@ -4,14 +4,15 @@
 using namespace std;
 
 int main() {
-    int n;
+    int n, input;
     cin >> n;
 
-    vector<int> arr(n);
+    vector<int> arr;
 
     for (int i = 1; i <= n; ++i)
     {
-        cin >> arr[i - 1];
+        cin >> input;
+        arr.push_back(input);
         if (i % 2 != 0)
         {
             sort(arr.begin(), arr.end());
